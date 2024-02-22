@@ -6,11 +6,12 @@ class AppTheme {
   static Color white = Colors.white;
   static ThemeData lightTheme = ThemeData(
     primaryColor: primaryLight,
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: Colors.transparent,
     appBarTheme: AppBarTheme(
         shadowColor: Colors.transparent,
         backgroundColor: Colors.transparent,
         centerTitle: true,
+        foregroundColor: Colors.black,
         titleTextStyle: TextStyle(
           color: black,
           fontSize: 30,
@@ -21,6 +22,12 @@ class AppTheme {
       backgroundColor: primaryLight,
       selectedItemColor: black,
       unselectedItemColor: white,
+    ),
+    textTheme: TextTheme(
+      headlineSmall:
+          TextStyle(fontSize: 25, fontWeight: FontWeight.w400, color: black),
+      bodyMedium:
+          TextStyle(fontSize: 20, fontWeight: FontWeight.w400, color: black),
     ),
   );
   static ThemeData darkTheme = ThemeData();
