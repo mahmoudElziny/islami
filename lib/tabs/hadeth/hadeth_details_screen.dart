@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:islami/app_theme.dart';
 import 'package:islami/tabs/hadeth/hadeth.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:islami/tabs/settings/settings_provider.dart';
+import 'package:provider/provider.dart';
 
 class HadethDetailsScreen extends StatelessWidget {
   static const String routeName = 'hadeth-details';
@@ -11,7 +13,8 @@ class HadethDetailsScreen extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('assets/images/default_bg.png'),
+            image: AssetImage(
+                'assets/images/${Provider.of<SettingsProvider>(context).backgroundImageName}.png'),
             fit: BoxFit.cover),
       ),
       child: Scaffold(
