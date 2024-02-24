@@ -3,6 +3,7 @@ import 'package:islami/app_theme.dart';
 import 'package:islami/tabs/hadeth/hadeth.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+
 class HadethDetailsScreen extends StatelessWidget {
   static const String routeName = 'hadeth-details';
   @override
@@ -11,7 +12,7 @@ class HadethDetailsScreen extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('assets/images/default_bg.png'),
+
             fit: BoxFit.cover),
       ),
       child: Scaffold(
@@ -39,6 +40,6 @@ class HadethDetailsScreen extends StatelessWidget {
         ),
       ),
     );
-    ;
+
   }
 }
