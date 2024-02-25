@@ -1,6 +1,11 @@
 {
     "mainTitle": "Islami",
     "darkMode": "Dark Mode",
-    "language": "Language"
+    "language": "Language",
+    "quran": "Quran",
+    "hadeth": "Hadeth",
+    "tsbeh": "Tasbeh",
+    "radio": "Radio",
+    "settings": "Settings"
 }
 

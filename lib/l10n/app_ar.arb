@@ -1,5 +1,10 @@
 {
     "mainTitle": "إسلامي",
     "darkMode": "الوضع الليلي",
-    "language": "اللغه"
+    "language": "اللغه",
+    "quran": "قران",
+    "hadeth": "حديث",
+    "tsbeh": "تسبيح",
+    "radio": "اذاعه",
+    "settings": "الاعدادات"
 }

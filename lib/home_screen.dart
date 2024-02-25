@@ -53,21 +53,27 @@ class _HomeScreenState extends State<HomeScreen> {
             selectedIndex = index;
             setState(() {});
           },
-          items: const [
+          items: [
             BottomNavigationBarItem(
-                icon: ImageIcon(AssetImage("assets/images/icon_quran.png")),
-                label: "Quran"),
+              icon: ImageIcon(AssetImage("assets/images/icon_quran.png")),
+              label: AppLocalizations.of(context)!.quran,
+            ),
             BottomNavigationBarItem(
-                icon: ImageIcon(AssetImage("assets/images/icon_hadeth.png")),
-                label: "Hadeth"),
+              icon: ImageIcon(AssetImage("assets/images/icon_hadeth.png")),
+              label: AppLocalizations.of(context)!.hadeth,
+            ),
             BottomNavigationBarItem(
-                icon: ImageIcon(AssetImage("assets/images/icon_sebha.png")),
-                label: "Sebha"),
+              icon: ImageIcon(AssetImage("assets/images/icon_sebha.png")),
+              label: AppLocalizations.of(context)!.tsbeh,
+            ),
             BottomNavigationBarItem(
-                icon: ImageIcon(AssetImage("assets/images/icon_radio.png")),
-                label: "Radio"),
+              icon: ImageIcon(AssetImage("assets/images/icon_radio.png")),
+              label: AppLocalizations.of(context)!.radio,
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.settings), label: "Settings"),
+              icon: Icon(Icons.settings),
+              label: AppLocalizations.of(context)!.settings,
+            ),
           ],
         ),
       ),
