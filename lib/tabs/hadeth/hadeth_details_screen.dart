@@ -14,7 +14,7 @@ class HadethDetailsScreen extends StatelessWidget {
       decoration: BoxDecoration(
         image: DecorationImage(
             image: AssetImage(
-                'assets/images/${Provider.of<SettingsProvider>(context)!.backgroundImageName}.png'),
+                'assets/images/${Provider.of<SettingsProvider>(context).backgroundImageName}.png'),
             fit: BoxFit.cover),
       ),
       child: Scaffold(
