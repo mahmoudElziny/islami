@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami/tabs/quran/sura_details_screen.dart';
 
+// ignore: must_be_immutable
 class Qurantab extends StatelessWidget {
   List<String> suraNames = [
     "الفاتحه",
