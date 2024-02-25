@@ -41,7 +41,10 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
             ? LoadingIndicator()
             : Container(
                 decoration: BoxDecoration(
-                    color: AppTheme.white,
+                    color: Provider.of<SettingsProvider>(context).themeMode ==
+                            ThemeMode.dark
+                        ? AppTheme.primaryDark
+                        : AppTheme.white,
                     borderRadius: BorderRadius.circular(20)),
                 margin: EdgeInsets.symmetric(
                     horizontal: MediaQuery.of(context).size.width * 0.05,
